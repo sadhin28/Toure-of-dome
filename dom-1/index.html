@@ -11,7 +11,7 @@
         <h1>Welcome To My DOM</h1>
     </header>
     <main>
-        <h1>My awsom dom</h1>
+        <h1 id="mydom">My awsom dom</h1>
         <ul>
             <li>Jalali Set</li>
             <li>Shafayet</li>
@@ -19,8 +19,8 @@
         </ul>
 
         <ul>
-            <li>Abble</li>
-            <li>Banana</li>
+            <li class="important-places">Abble</li>
+            <li class="important-places">Banana</li>
             <li>Carrot</li>
         </ul>
     </main>
@@ -29,12 +29,22 @@
         const liCollection = document.getElementsByTagName('li');
         // console.log(liCollection);
         for(let i of liCollection){
-            console.log(i.innerHTML)
+            // console.log(i.innerHTML)
         }
         const allHeadings = document.getElementsByTagName('h1');
         for(let h1 of allHeadings){
-            console.log(h1.innerText)
+            // console.log(h1.innerText)
         }
+        const places =document.getElementsByClassName('important-places')
+        for(let i of places){
+            // console.log(i.innerText)
+        }
+        const myDom = document.getElementById('mydom');
+        myDom.innerText = 'Sadhin'
+        console.log(myDom).innerText
+        
+
+        
     </script>
 </body>
 </html>
