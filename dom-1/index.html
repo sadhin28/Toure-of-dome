@@ -23,6 +23,11 @@
             <li class="important-places">Banana</li>
             <li>Carrot</li>
         </ul>
+
+        <div  id="my-details">
+            <h1>Name:Taosif Bin Sadhin</h1>
+            <p>Age:22yrs</p>
+        </div>
     </main>
     <script src="js/dom.js"></script>
     <script>
@@ -55,6 +60,10 @@
         myDom.setAttribute('title', 'I am Sadhin');
         const  links = document.getElementById('ul1');
         links.setAttribute('title','Click me');
+        const div=document.getElementById('my-details');
+        const text=div.innerText;
+        console.log(text)
+
     </script>
 </body>
 </html>
