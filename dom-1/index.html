@@ -17,7 +17,24 @@
             <li>Shafayet</li>
             <li>Bonobash</li>
         </ul>
+
+        <ul>
+            <li>Abble</li>
+            <li>Banana</li>
+            <li>Carrot</li>
+        </ul>
     </main>
     <script src="js/dom.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        // console.log(liCollection);
+        for(let i of liCollection){
+            console.log(i.innerHTML)
+        }
+        const allHeadings = document.getElementsByTagName('h1');
+        for(let h1 of allHeadings){
+            console.log(h1.innerText)
+        }
+    </script>
 </body>
 </html>
