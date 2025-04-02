@@ -12,7 +12,7 @@
     </header>
     <main>
         <h1 id="mydom">My awsom dom</h1>
-        <ul>
+        <ul class="ul1">
             <li>Jalali Set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
@@ -41,7 +41,11 @@
         }
         const myDom = document.getElementById('mydom');
         myDom.innerText = 'Sadhin'
-        console.log(myDom).innerText
+        // console.log(myDom).innerText
+        const ul12 = document.querySelectorAll('.ul1')
+        for(let l of ul12){
+            console.log(l.innerText)
+        }
         
 
         
