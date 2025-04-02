@@ -8,14 +8,14 @@
 </head>
 <body>
     <header>
-        <h1>Welcome To My DOM</h1>
+        <h1 id="headerTittle">Welcome To My DOM</h1>
     </header>
     <main>
         <h1 id="mydom">My awsom dom</h1>
-        <ul class="ul1">
-            <li>Jalali Set</li>
-            <li>Shafayet</li>
-            <li>Bonobash</li>
+        <ul id="ul1">
+            <li id="lii">Jalali Set</li>
+            <li id="lii">Shafayet</li>
+            <li id="lii">Bonobash</li>
         </ul>
 
         <ul>
@@ -46,9 +46,15 @@
         for(let l of ul12){
             console.log(l.innerText)
         }
-        
-
-        
+        document.getElementById('headerTittle').style.backgroundColor='blue'
+        document.getElementById('headerTittle').style.textAlign='center'
+        document.getElementById('ul1').style.display='flex'
+        document.getElementById('ul1').style.gap='20px'
+        const title = document.getElementById('headerTittle');
+        title.setAttribute('title', 'Tooltip set by javascript');
+        myDom.setAttribute('title', 'I am Sadhin');
+        const  links = document.getElementById('ul1');
+        links.setAttribute('title','Click me');
     </script>
 </body>
 </html>
