@@ -15,6 +15,9 @@ goodproducts.style.gap='20px'
 goodproducts.style.gridTemplateColumns='100px 100px 100px '
 goodproducts.style.justifyContent='space-around'
 
+let products =goodproducts.childNodes[3]
+console.log(products)
+
 
 
 const boxes = document.querySelectorAll('#box');
@@ -49,3 +52,4 @@ hlink.style.gap='20px'
 const sections1 = document.getElementById('good')
 sections1.classList.add('large-text');
 sections1.classList.remove('text-center')
+
