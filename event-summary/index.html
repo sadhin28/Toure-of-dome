@@ -19,8 +19,10 @@
         <button onclick="handelOnClick()">Handel Event by onclick function</button>
         <button id="handelclick">Handel Event by onclick function</button>
         <br>
-        <div>
-            
+        <div id="coment-container">
+            <P class="coment"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus illum maxime veniam totam explicabo corrupti fugiat sit eligendi obcaecati atque laudantium praesentium eum asperiores laborum, aut eaque perferendis vero.</P>
+            <P class="coment"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus illum maxime veniam totam explicabo corrupti fugiat sit eligendi obcaecati atque laudantium praesentium eum asperiores laborum, aut eaque perferendis vero.</P>
+            <P class="coment"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti necessitatibus illum maxime veniam totam explicabo corrupti fugiat sit eligendi obcaecati atque laudantium praesentium eum asperiores laborum, aut eaque perferendis vero.</P>
         </div>
         <br>
         <div>
@@ -46,7 +48,15 @@
             p.innerText=inputText;
             inputfield.value=''
         }) 
-
+        document.getElementById('postButton').addEventListener('click',function(){
+            const comentBox =document.getElementById('textArea');
+            const comentText=comentBox.value;
+            const coments = document.getElementById('coment-container');
+            const p=document.createElement('p')
+            p.innerText=comentText;
+            coments.appendChild(p)
+            comentBox.value=''
+        })
 
     </script>
 </body>
