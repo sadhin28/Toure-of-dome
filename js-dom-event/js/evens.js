@@ -33,3 +33,8 @@ const makeGreen =document.getElementById('make-green')
 makeGreen.addEventListener('click',function makegreen(){
     document.body.style.backgroundColor='green'
 })
+
+//important we will use some times
+document.getElementById('make-goldenRod').addEventListener('click',function(){
+    document.body.style.backgroundColor='goldenrod'
+})
