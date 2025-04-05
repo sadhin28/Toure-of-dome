@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event summary</title>
+</head>
+<body>
+    <main>
+        <h1>Js Dom Summary</h1>
+        <h3 id="handler-status">Default Text</h3>
+        <button onclick="handelOnClick()">Handel Event by onclick function</button>
+        <button id="handelclick">Handel Event by onclick function</button>
+    </main>
+    <script>
+        function handelOnClick(){
+           const handlerStatus= document.getElementById('handler-status')
+           handlerStatus.innerText='Handled By Function on click arrribute'
+        }
+
+        document.getElementById('handelclick').addEventListener('click',function(){
+            const handlerStatus= document.getElementById('handler-status')
+           handlerStatus.innerText='Handled By Function on click arrribute'
+        })
+    </script>
+</body>
+</html>
