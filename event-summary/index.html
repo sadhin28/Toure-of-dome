@@ -9,6 +9,13 @@
     <main>
         <h1>Js Dom Summary</h1>
         <h3 id="handler-status">Default Text</h3>
+        <br>
+        <p id="input-paragraph">Default Text</p>
+        <br>
+        <input type="text" name="" id="input-field">
+        
+        <button id="btn-updat">Update</button>
+        <br><br>
         <button onclick="handelOnClick()">Handel Event by onclick function</button>
         <button id="handelclick">Handel Event by onclick function</button>
     </main>
@@ -22,6 +29,13 @@
             const handlerStatus= document.getElementById('handler-status')
            handlerStatus.innerText='Handled By Function on click arrribute'
         })
+        document.getElementById('btn-updat').addEventListener('click',function(){
+            const inputfield=document.getElementById('input-field');
+            const inputText = inputfield.value;
+            const p = document.getElementById('input-paragraph');
+            p.innerText=inputText;
+            inputfield.value=''
+        }) 
     </script>
 </body>
 </html>
