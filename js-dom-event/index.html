@@ -13,10 +13,22 @@
         <h1>DOM er ajke special event</h1>
         <button onclick="console.log('7')">Click Me</button>
         <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
+        <br> <br>
+        <button onclick="makeRed()">Meke Red</button>
+        <button id="make-blue">Make Blue</button>
+        <button id="make-gray">Make Gray</button>
     </main>
     <footer>
 
     </footer>
     <script src="js/evens.js"></script>
+    <script>
+        const blueButton=document.getElementById('make-blue');
+        blueButton.onclick= makeBlue;
+        function makeBlue(){
+            document.body.style.backgroundColor='blue';
+        }
+        
+    </script>
 </body>
 </html>
