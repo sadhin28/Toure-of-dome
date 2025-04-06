@@ -6,7 +6,7 @@ document.getElementById('btnClick').addEventListener('click', function(){
     //set the comment inside the commentbox
     const comentbox = document.getElementById('comentBox')
     const p =document.createElement('p');
-    p.innerText=newcoment.value;
+    p.innerText=newcoment;
     comentbox.appendChild(p);
     //step 4: clean coment box
     coments.value=''
