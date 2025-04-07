@@ -16,8 +16,14 @@
             <li class="item">Repellendus, corrupti aliquid.</li>
             <li class="item">Autem, exercitationem molestiae.</li>
         </ul>
+        
         <button id="btn-add-item">Add Item</button>
+        <br><br>
+        <button id="green">Make Green</button>
+
+        <button onclick="red()">Make Red</button>
     </section>
+
     <script>
         // const items = document.getElementsByClassName('item');
         // for(const item of items){
@@ -36,6 +42,14 @@
             li.classList.add('item');
             listContainer.appendChild(li)
         })
+
+        document.getElementById('green').addEventListener('click',function(){
+            document.body.style.backgroundColor='green'
+        })
+
+        function red(){
+            document.body.style.backgroundColor='red'
+        }
     </script>
 </body>
 </html>
