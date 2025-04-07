@@ -22,6 +22,9 @@
         <button id="green">Make Green</button>
 
         <button onclick="red()">Make Red</button>
+
+        <br><br>
+        <input type="email" name="" id="email">
     </section>
 
     <script>
@@ -48,8 +51,14 @@
         })
 
         function red(){
-            document.body.style.backgroundColor='red'
+            document.body.style.backgroundColor='red';
+
         }
+
+        document.getElementById('email').addEventListener('keyup',function(event){
+            console.log(event.target.value)
+            email.value=''
+        })
     </script>
 </body>
 </html>
