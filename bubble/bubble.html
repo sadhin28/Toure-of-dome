@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Bubble</title>
 </head>
-<body>
-        <section>
+<body id="body">
+        <section id="list-continer">
             <ul id="list-ul">
                 <li id="item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia ipsa cumque, et maiores consectetur dicta atque? Libero, maiores tenetur?</li>
                 <li id="item-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia ipsa cumque, et maiores consectetur dicta atque? Libero, maiores tenetur?</li>
@@ -23,6 +23,12 @@
             })
             document.getElementById('list-ul').addEventListener('click',function(){
                 console.log('ul clicked')
+            })
+            document.getElementById('list-continer').addEventListener('click',function(){
+                console.log('aection container clicked')
+            })
+            document.getElementById('body').addEventListener('click',function(){
+                console.log('Body html click')
             })
         </script>
 </body>
